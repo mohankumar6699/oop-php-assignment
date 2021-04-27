@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<title>Best Movies</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="icon" href="w3images/logo.png" type="image/gif" sizes="16x16">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif;}
+.w3-bar-block .w3-bar-item {padding:20px;}
+
+.w3-right {  
+    right: 17px;
+    position: relative;
+}
+a.btn {
+    border: 1px solid;
+    padding: 7px 20px;
+    text-decoration: none !important;
+}
+
+.padding-right{
+   padding-right: 10px;
+}
+.social-footer {
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+.social-footer .w3-right {
+    float: none !important;
+    display: inline-block;
+}
+</style>
+
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">❎  Menu</a>
+  <a href="index.html"  class="w3-bar-item w3-button">Home</a>
+  <a href="movie.html"  class="w3-bar-item w3-button">Movies</a>
+  <a href="tv-series.html"  class="w3-bar-item w3-button">TV Series</a>
+  <a href="register.html"  class="w3-bar-item w3-button">Register</a>
+  <a href="login.html"  class="w3-bar-item w3-button">Login</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-left w3-padding-16 padding-right"><a href="index.html"><img src="w3images/logo.png" alt="logo" width="40"></a></div>
+    <div class="w3-right w3-padding-16"><a href="#"><img src="w3images/search.png" alt="search" width="40"></a></div>
+    
+    <div class="w3-center w3-padding-16">Best Movies</div>
+
+    
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="w3images/moonlight.jpg" alt="moonlight" style="width:100%">
+      <h3>Moonlight</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p><a href="#" class="btn">Add to Cart</a></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="w3images/replicas.jpg" alt="replicas" style="width:100%">
+      <h3>Replicas</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p><a href="#" class="btn">Add to Cart</a></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="w3images/ten.jpg" alt="ten" style="width:100%">
+      <h3>10</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p><a href="#" class="btn">Add to Cart</a></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="w3images/archer.jpg" alt="archer" style="width:100%">
+      <h3>Archer</h3>
+      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+       <p><a href="#" class="btn">Add to Cart</a></p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="w3images/after.jpg" alt="after" style="width:100%">
+      <h3>After</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p><a href="#" class="btn border-white text-white">Add to Cart</a></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="w3images/crimes-of-grindelwald.jpg" alt="crimes-of-grindelwald" style="width:100%">
+      <h3>Crimes of Grindelwald</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p><a href="#" class="btn border-white text-white">Add to Cart</a></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="w3images/black-panther.jpg" alt="black-panther" style="width:100%">
+      <h3>Black Panther</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>What else?</p>
+      <p><a href="#" class="btn border-white text-white">Add to Cart</a></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="w3images/jocker.jpg" alt="jocker" style="width:100%">
+      <h3>Jocker</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p><a href="#" class="btn border-white text-white">Add to Cart</a></p>
+    </div>
+  </div>
+	
+  
+  
+  <!-- Pagination -->
+  <div class="w3-center">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Me, The Best Movies & TV Series</h3><br>
+    <img src="w3images/Feature text.png" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>I am Who I Am!</b></h4>
+      <h6><i>With Passion For Real, Movies & TV Series</i></h6>
+      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Movie</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">TV</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">TV Series</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Movie</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Movies</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Best Movie</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">SciFi</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">TV Series</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Series</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drama</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Movies</span>
+      </p>
+    </div>
+  </footer>
+<div class="social-footer">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">    
+   
+    <div class="w3-right w3-padding-16 padding-right"><a href="#"><img src="w3images/mail.png" alt="mail" width="40"></a></div>
+    <div class="w3-right w3-padding-16 padding-right"><a href="#"><img src="w3images/fb.png" alt="fb" width="40"></a></div>
+    <div class="w3-right w3-padding-16 padding-right"><a href="#"><img src="w3images/instagram.png" alt="instagram" width="40"></a></div>
+    <div class="w3-right w3-padding-16 padding-right"><a href="#"><img src="w3images/youtube.png" alt="youtube" width="40"></a></div>
+  </div>
+</div>
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
